@@ -1,0 +1,62 @@
+[2015-08-02 02:17:53.038 GMT    27	INFO   	100313	OutsideRuntimeClient	]	---------- Initializing OutsideRuntimeClient on GAVIN-PC at 192.168.0.8 Client Id = *cli/b0b5548d ----------	
+[2015-08-02 02:17:53.038 GMT    27	INFO   	100314	OutsideRuntimeClient	]	---------- Starting OutsideRuntimeClient with runtime Version='1.0.9.0 (Release).' Config= 
+ Platform version info:
+   .NET version: 4.0.30319.42000
+   Is .NET 4.5=True
+   OS version: Microsoft Windows NT 6.1.7601 Service Pack 1
+   GC Type=Client GCLatencyMode=Interactive
+   Host: GAVIN-PC
+   Processor Count: 4
+Client Configuration:
+   Config File Name: L:\Projects\Ains\src\Ains.Silo\bin\Debug\ClientConfigurationForTesting.xml
+   Start time: 2015-08-02 02:17:53.038 GMT
+   Gateway Provider: Config
+   Gateways[1]:
+      127.0.0.1:40000
+   Preferred Gateway Index: -1
+   GatewayListRefreshPeriod: 00:01:00
+   Azure:
+      DeploymentId: testdepid-2015-08-02-02-17-43-283-701
+      DataConnectionString: null
+   Preferred Address Family: InterNetwork
+   DNS Host Name: GAVIN-PC
+   Client Name: Client
+   Tracing: 
+     Default Trace Level: Info
+     TraceLevelOverrides:
+         Runtime ==> Info
+         Application ==> Info
+         AssemblyLoader ==> Warning
+     Trace to Console: True
+     Trace File Name: L:\Projects\Ains\src\Ains.Silo\bin\Debug\Client-2015-08-02-02.17.52.538Z.log
+     Write Messaging Traces: False
+     LargeMessageWarningThreshold: 85000
+     PropagateActivityId: False
+     BulkMessageLimit: 1000
+   Statistics: 
+     MetricsTableWriteInterval: 00:05:00
+     PerfCounterWriteInterval: 00:00:30
+     LogWriteInterval: 00:05:00
+     WriteLogStatisticsToTable: True
+     StatisticsCollectionLevel: Info
+   Messaging:
+       Response timeout: 00:16:40
+       Maximum resend count: 0
+       Resend On Timeout: False
+       Maximum Socket Age: 10675199.02:48:05.4775807
+       Drop Expired Messages: True
+       Client Sender Buckets: 8192
+       Use standard (.NET) serializer: False   [NOTE: This *MUST* match the setting on the server or nothing will work!]
+       Buffer Pool Buffer Size: 4096
+       Buffer Pool Max Size: 10000
+       Buffer Pool Preallocation Size: 250
+       Use Message Batching: False
+       Max Message Batching Size: 10
+   Providers:
+       No providers configured.
+	
+[2015-08-02 02:17:53.048 GMT    27	INFO   	101309	Messaging.GatewayManager	]	Found 1 knownGateways from Gateway listProvider [gwy.tcp://127.0.0.1:40000/0]	
+[2015-08-02 02:17:55.187 GMT    27	INFO   	100908	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	192.168.0.8:0]	Connected to gateway at address gwy.tcp://127.0.0.1:40000/0 on trial 0.	
+[2015-08-02 02:17:55.204 GMT    54	INFO   	100000	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	192.168.0.8:0]	Starting AsyncAgent Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0 on managed thread 54	
+[2015-08-02 02:17:55.204 GMT    53	INFO   	100000	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	192.168.0.8:0]	Starting AsyncAgent Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0 on managed thread 53	
+[2015-08-02 02:17:55.260 GMT    27	INFO   	100929	OutsideRuntimeClient	192.168.0.8:0]	---------- Started OutsideRuntimeClient with Global Client ID: C192.168.0.8:0:-176177873*cli/b0b5548d@4f541e84, client GUID ID: *cli/b0b5548d	

@@ -1,0 +1,210 @@
+[2015-08-01 06:49:22.352 GMT     9	INFO   	100403	Silo	127.0.0.1:22222]	-------------- Initializing Primary silo on GAVIN-PC at 127.0.0.1:22222, gen 176107762 --------------	
+[2015-08-01 06:49:22.381 GMT     9	INFO   	100415	Silo	127.0.0.1:22222]	Starting silo Primary with runtime Version='1.0.9.0 (Release).' Config= 
+Config File Name: L:\Projects\Ains\src\Ains.Silo\bin\Debug\OrleansConfigurationForTesting.xml
+Host: GAVIN-PC
+Start time: 2015-08-01 06:49:22.367 GMT
+Primary node: 127.0.0.1:22222
+Platform version info:
+   .NET version: 4.0.30319.42000
+   Is .NET 4.5=True
+   OS version: Microsoft Windows NT 6.1.7601 Service Pack 1
+   GC Type=Client GCLatencyMode=Interactive
+Global configuration:
+   System Ids:
+      ServiceId: 00000000-0000-0000-0000-000000000000
+      DeploymentId: testdepid-2015-08-01-06-49-19-882-272
+   Subnet: 
+   Seed nodes: 127.0.0.1:22222
+   Messaging:
+       Response timeout: 00:00:30
+       Maximum resend count: 0
+       Resend On Timeout: False
+       Maximum Socket Age: 10675199.02:48:05.4775807
+       Drop Expired Messages: True
+       Silo Sender queues: 4
+       Gateway Sender queues: 4
+       Use standard (.NET) serializer: False
+       Buffer Pool Buffer Size: 4096
+       Buffer Pool Max Size: 10000
+       Buffer Pool Preallocation Size: 250
+       Use Message Batching: False
+       Max Message Batching Size: 10
+       Maximum forward count: 2
+   Liveness:
+      LivenessEnabled: True
+      LivenessType: MembershipTableGrain
+      ProbeTimeout: 00:00:10
+      TableRefreshTimeout: 00:01:00
+      DeathVoteExpirationTimeout: 00:02:00
+      NumMissedProbesLimit: 3
+      NumProbedSilos: 3
+      NumVotesForDeathDeclaration: 2
+      UseLivenessGossip: True
+      IAmAliveTablePublishTimeout: 00:05:00
+      NumMissedTableIAmAliveLimit: 2
+      MaxJoinAttemptTime: 00:05:00
+      ExpectedClusterSize: 2
+   SystemStore:
+      ConnectionString: null
+   Application:
+      Defaults:
+         Deactivate if idle for: 02:00:00
+
+   PlacementStrategy: 
+         Default Placement Strategy: RandomPlacement
+         Deployment Load Publisher Refresh Time: 00:00:01
+         Activation CountBased Placement Choose Out Of: 2
+   Grain directory cache:
+      Maximum size: 1000000 grains
+      Initial TTL: 00:00:30
+      Maximum TTL: 00:04:00
+      TTL extension factor: 2.00
+      Directory Caching Strategy: Adaptive
+   Grain directory:
+      Lazy deregistration delay: 00:01:00
+      Client registration refresh: 00:05:00
+   Reminder Service:
+       ReminderServiceType: ReminderTableGrain
+   Consistent Ring:
+       Use Virtual Buckets Consistent Ring: True
+       Num Virtual Buckets Consistent Ring: 30
+   Providers:
+       StorageProviders:
+           Name=MemoryStore, Type=Orleans.Storage.MemoryStorage, Properties=[]
+           Name=AzureStore, Type=Orleans.Storage.AzureTableStorage, Properties=[DataConnectionString]
+
+Silo configuration:
+   Silo Name: Primary
+   Generation: 176107762
+   Host Name or IP Address: loopback
+   DNS Host Name: GAVIN-PC
+   Port: 22222
+   Subnet: 
+   Preferred Address Family: InterNetwork
+   Proxy Gateway: 127.0.0.1:40000
+   IsPrimaryNode: True
+   Scheduler: 
+         Max Active Threads: 4
+         Processor Count: 4
+         Delay Warning Threshold: 00:00:10
+         Activation Scheduling Quantum: 00:00:00.1000000
+         Turn Warning Length Threshold: 00:00:00.2000000
+         Inject More Worker Threads: False
+         MinDotNetThreadPoolSize: 200
+         .NET thread pool sizes - Min: Worker Threads=4 Completion Port Threads=4
+         .NET thread pool sizes - Max: Worker Threads=1023 Completion Port Threads=1000
+         .NET ServicePointManager - DefaultConnectionLimit=200 Expect100Continue=False UseNagleAlgorithm=False
+   Load Shedding Enabled: False
+   Load Shedding Limit: 95
+   Debug: 
+   Tracing: 
+     Default Trace Level: Info
+     TraceLevelOverrides:
+         Application ==> Info
+     Trace to Console: True
+     Trace File Name: L:\Projects\Ains\src\Ains.Silo\bin\Debug\Primary-2015-08-01-06.49.20.002Z.log
+     Write Messaging Traces: False
+     LargeMessageWarningThreshold: 85000
+     PropagateActivityId: False
+     BulkMessageLimit: 1000
+   Statistics: 
+     MetricsTableWriteInterval: 00:00:30
+     PerfCounterWriteInterval: 00:00:30
+     LogWriteInterval: 00:05:00
+     WriteLogStatisticsToTable: True
+     StatisticsCollectionLevel: Info
+
+	
+[2015-08-01 06:49:25.242 GMT     9	INFO   	100000	Scheduler.OrleansTaskScheduler	127.0.0.1:22222]	Starting OrleansTaskScheduler with 4 Max Active application Threads and 1 system thread.	
+[2015-08-01 06:49:25.259 GMT     9	INFO   	101010	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:22222]	Opened a listening socket at address 127.0.0.1:22222	
+[2015-08-01 06:49:25.262 GMT     9	INFO   	101010	Runtime.Messaging.GatewayAcceptor	127.0.0.1:22222]	Opened a listening socket at address 127.0.0.1:40000	
+[2015-08-01 06:49:25.281 GMT     9	INFO   	100000	VirtualBucketsRingProvider	127.0.0.1:22222]	Starting VirtualBucketsRingProvider on silo S127.0.0.1:22222:176107762/xDCE38F67.	
+[2015-08-01 06:49:25.311 GMT     9	INFO   	103003	VirtualBucketsRingProvider	127.0.0.1:22222]	Added Server S127.0.0.1:22222:176107762/xDCE38F67. Current view: [S127.0.0.1:22222:176107762 -> <MultiRange: Size=x100000000, %Ring=100.000%>]	
+[2015-08-01 06:49:25.313 GMT     9	INFO   	103005	VirtualBucketsRingProvider	127.0.0.1:22222]	-NotifyLocalRangeSubscribers about old <(0 0], Size=x100000000, %Ring=100.000%> new <MultiRange: Size=x100000000, %Ring=100.000%> increased? True	
+[2015-08-01 06:49:25.332 GMT     9	INFO   	100294	SystemStatus	127.0.0.1:22222]	SystemStatus=Created	
+[2015-08-01 06:49:25.332 GMT     9	INFO   	100422	Silo	127.0.0.1:22222]	-------------- Started silo S127.0.0.1:22222:176107762, ConsistentHashCode DCE38F67 --------------	
+[2015-08-01 06:49:25.343 GMT     9	INFO   	100294	SystemStatus	127.0.0.1:22222]	SystemStatus=Starting	
+[2015-08-01 06:49:25.343 GMT     9	INFO   	100401	Silo	127.0.0.1:22222]	Silo Start()	
+[2015-08-01 06:49:25.345 GMT     9	INFO   	100430	Silo	127.0.0.1:22222]	Configured ThreadPool.SetMinThreads() to values: 200,200. Previous values are: 4,4.	
+[2015-08-01 06:49:25.345 GMT     9	INFO   	100436	Silo	127.0.0.1:22222]	Configured .NET ServicePointManager to Expect100Continue=False, DefaultConnectionLimit=200, UseNagleAlgorithm=False to improve Azure storage performance.	
+[2015-08-01 06:49:25.363 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	Searching for assemblies in L:\Projects\Ains\src\Ains.Silo\bin\Debug...	
+[2015-08-01 06:49:26.086 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: L:\Projects\Ains\src\Ains.Silo\bin\Debug\Ains.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2015-08-01 06:49:26.132 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: L:\Projects\Ains\src\Ains.Silo\bin\Debug\Microsoft.Data.Edm.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2015-08-01 06:49:26.293 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: L:\Projects\Ains\src\Ains.Silo\bin\Debug\Microsoft.Data.OData.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2015-08-01 06:49:26.344 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: L:\Projects\Ains\src\Ains.Silo\bin\Debug\Microsoft.Data.Services.Client.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2015-08-01 06:49:26.345 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: L:\Projects\Ains\src\Ains.Silo\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2015-08-01 06:49:26.395 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: L:\Projects\Ains\src\Ains.Silo\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2015-08-01 06:49:26.453 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: L:\Projects\Ains\src\Ains.Silo\bin\Debug\Newtonsoft.Json.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2015-08-01 06:49:26.456 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: L:\Projects\Ains\src\Ains.Silo\bin\Debug\Orleans.dll
+	* Assembly filename is excluded.	
+[2015-08-01 06:49:26.458 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: L:\Projects\Ains\src\Ains.Silo\bin\Debug\OrleansRuntime.dll
+	* Assembly filename is excluded.	
+[2015-08-01 06:49:26.460 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: L:\Projects\Ains\src\Ains.Silo\bin\Debug\OrleansTestingHost.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2015-08-01 06:49:26.463 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: L:\Projects\Ains\src\Ains.Silo\bin\Debug\System.Spatial.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2015-08-01 06:49:26.464 GMT     9	WARNING	101705	AssemblyLoader.Silo	127.0.0.1:22222]	Unable to find directory L:\Projects\Ains\src\Ains.Silo\bin\Debug\Applications; skipping.	
+[2015-08-01 06:49:26.464 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	Loading assembly L:\Projects\Ains\src\Ains.Silo\bin\Debug\Ains.Logic.dll...	
+[2015-08-01 06:49:26.477 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	Loading assembly L:\Projects\Ains\src\Ains.Silo\bin\Debug\OrleansProviders.dll...	
+[2015-08-01 06:49:26.482 GMT     9	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	2 assemblies loaded.	
+[2015-08-01 06:49:26.512 GMT     9	INFO   	101711	AssemblyLoader.Silo	127.0.0.1:22222]	Loaded grain type summary for 8 types: 
+Grain class Ains.Logic.Arena [1654451742 (0x629CEE1E)] from Ains.Logic.dll implementing interfaces: Ains.IArena [-1366771405 (0xAE88B933)], Orleans.IGrainWithStringKey [-1277021679 (0xB3E23211)]
+Grain class Ains.Logic.Hero [-1680127434 (0x9BDB4A36)] from Ains.Logic.dll implementing interfaces: Ains.IHero [1019832973 (0x3CC96A8D)], Ains.IPlayer [1000532819 (0x3BA2EB53)]
+Grain class Ains.Logic.Player [1889138311 (0x7099F687)] from Ains.Logic.dll implementing interfaces: Ains.IPlayer [1000532819 (0x3BA2EB53)]
+Grain class Orleans.Runtime.Management.ManagementGrain [1954798034 (0x7483D9D2)] from OrleansRuntime.dll implementing interfaces: Orleans.Runtime.IManagementGrain [-1734666656 (0x989B1660)]
+Grain class Orleans.Runtime.MembershipService.GrainBasedMembershipTable [-2103923544 (0x8298ACA8)] from OrleansRuntime.dll implementing interfaces: Orleans.IMembershipTableGrain [-1256503757 (0xB51B4633)]
+Grain class Orleans.Runtime.ReminderService.GrainBasedReminderTable [-55315191 (0xFCB3F509)] from OrleansRuntime.dll implementing interfaces: Orleans.IReminderTableGrain [-1135060418 (0xBC585A3E)]
+Grain class Orleans.Streams.PubSubRendezvousGrain [1903070868 (0x716E8E94)] from OrleansRuntime.dll implementing interfaces: Orleans.Streams.IPubSubRendezvousGrain [1746702088 (0x681C8F08)]
+Grain class OrleansProviders.Storage.MemoryStorageGrain [-448291344 (0xE5479DF0)] from OrleansProviders.dll implementing interfaces: Orleans.Storage.IMemoryStorageGrain [577125491 (0x22663C73)]
+	
+[2015-08-01 06:49:26.535 GMT    12	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/1	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/1 on managed thread 12	
+[2015-08-01 06:49:26.544 GMT    15	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/System.5	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/System.5 on managed thread 15	
+[2015-08-01 06:49:26.551 GMT    14	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/3	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/3 on managed thread 14	
+[2015-08-01 06:49:26.577 GMT    16	INFO   	100000	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAcceptor on managed thread 16	
+[2015-08-01 06:49:26.577 GMT     3	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/0	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/0 on managed thread 3	
+[2015-08-01 06:49:26.627 GMT    17	INFO   	100000	Runtime.Messaging.SiloMessageSender/PingSender	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.SiloMessageSender/PingSender on managed thread 17	
+[2015-08-01 06:49:26.632 GMT    13	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/2	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/2 on managed thread 13	
+[2015-08-01 06:49:26.645 GMT    23	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/Ping	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/Ping on managed thread 23	
+[2015-08-01 06:49:26.645 GMT    22	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/System	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/System on managed thread 22	
+[2015-08-01 06:49:26.651 GMT    21	INFO   	100000	Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1	127.0.0.1:22222]	Starting AsyncAgent Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1 on managed thread 21	
+[2015-08-01 06:49:26.665 GMT    16	INFO   	100328	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:22222]	Stopping AsyncAgent Runtime.Messaging.IncomingMessageAcceptor that runs on managed thread 16	
+[2015-08-01 06:49:26.675 GMT     9	INFO   	100000	MembershipFactory	127.0.0.1:22222]	Creating membership oracle for type=MembershipTableGrain	
+[2015-08-01 06:49:26.676 GMT    24	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/Application	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/Application on managed thread 24	
+[2015-08-01 06:49:26.676 GMT    18	INFO   	100000	Runtime.Messaging.SiloMessageSender/SystemSender	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.SiloMessageSender/SystemSender on managed thread 18	
+[2015-08-01 06:49:26.685 GMT     9	INFO   	100000	ReminderFactory	127.0.0.1:22222]	Creating reminder system target for type=ReminderTableGrain	
+[2015-08-01 06:49:26.704 GMT    15	INFO   	100635	MembershipFactory	127.0.0.1:22222]	Creating membership table provider for type=MembershipTableGrain	
+[2015-08-01 06:49:26.725 GMT    12	INFO   	100637	GrainBasedMembershipTable	127.0.0.1:22222]	GrainBasedMembershipTable Activated.	
+[2015-08-01 06:49:26.738 GMT    15	INFO   	100507	Catalog	127.0.0.1:22222]	Before collection#1: memory=5MB, #activations=1, collector=<#Activations=0, #Buckets=0, buckets=[]>.	
+[2015-08-01 06:49:26.739 GMT    15	INFO   	100508	Catalog	127.0.0.1:22222]	After collection#1: memory=5MB, #activations=1, collected 0 activations, collector=<#Activations=0, #Buckets=0, buckets=[]>, collection time=00:00:00.0077540.	
+[2015-08-01 06:49:26.750 GMT    15	INFO   	103102	ProviderLoader/IStorageProvider	127.0.0.1:22222]	Loaded provider of type Orleans.Storage.MemoryStorage Name=MemoryStore	
+[2015-08-01 06:49:26.751 GMT    15	ERROR  	103108	ProviderLoader/IStorageProvider	127.0.0.1:22222]	!!!!!!!!!! Provider of type Orleans.Storage.AzureTableStorage name AzureStore was not loaded.	
+[2015-08-01 06:49:26.776 GMT     9	ERROR  	100439	Silo	127.0.0.1:22222]	!!!!!!!!!! Exception during Silo.Start	
+Exc level 0: System.AggregateException: One or more errors occurred.
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait(TimeSpan timeout)
+   at Orleans.OrleansTaskExtentions.WaitWithThrow(Task task, TimeSpan timeout)
+   at Orleans.Runtime.Silo.DoStart()
+   at Orleans.Runtime.Silo.Start()
+Exc level 1: Orleans.Runtime.OrleansException: Provider of type Orleans.Storage.AzureTableStorage name AzureStore was not loaded.
+   at Orleans.Providers.ProviderLoader`1.ValidateProviders()
+   at Orleans.Providers.ProviderLoader`1.LoadProviders(IDictionary`2 configs, IProviderManager providerManager)
+   at Orleans.Runtime.Storage.StorageProviderManager.LoadStorageProviders(IDictionary`2 configs)
+   at Orleans.Runtime.Silo.<DoStart>b__11()
+   at Orleans.Runtime.Scheduler.SchedulerExtensions.<>c__DisplayClassa.<<QueueTask>b__8>d__c.MoveNext()

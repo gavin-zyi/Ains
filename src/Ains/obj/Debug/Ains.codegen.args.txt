@@ -1,0 +1,35 @@
+/nomerge
+/in:obj\Debug\Ains.dll
+/key:
+/d:DEBUG;TRACE
+/rns:Ains
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Microsoft.CSharp.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\mscorlib.dll
+/r:L:\Projects\Ains\packages\Microsoft.Orleans.Core.1.0.9\lib\net45\Orleans.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.ComponentModel.DataAnnotations.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Core.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Data.DataSetExtensions.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Data.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Net.Http.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Xml.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Xml.Linq.dll
+/fsharp:
+/cwd:L:\Projects\Ains\src\Ains\
+/config:Debug
+/OptionExplicit:
+/OptionCompare:
+/OptionStrict:
+/OptionInfer:
+/MyType:
+/src:Grid.cs
+/src:Hex.cs
+/src:IArena.cs
+/src:IHero.cs
+/src:IPlayer.cs
+/src:PlayerStat.cs
+/src:Properties\AssemblyInfo.cs
+/src:Properties\orleans.codegen.cs
+/src:Terrain.cs
+/src:Tile.cs
+/src:Trait.cs

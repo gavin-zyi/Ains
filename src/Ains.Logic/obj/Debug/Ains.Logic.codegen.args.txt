@@ -1,0 +1,31 @@
+/svr
+/in:obj\Debug\Ains.Logic.dll
+/key:
+/d:DEBUG;TRACE
+/rns:Ains.Logic
+/r:L:\Projects\Ains\src\Ains\bin\Debug\Ains.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Microsoft.CSharp.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\mscorlib.dll
+/r:L:\Projects\Ains\packages\Microsoft.Orleans.Core.1.0.9\lib\net45\Orleans.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Core.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Data.DataSetExtensions.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Data.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Net.Http.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Xml.dll
+/r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Xml.Linq.dll
+/fsharp:
+/cwd:L:\Projects\Ains\src\Ains.Logic\
+/config:Debug
+/OptionExplicit:
+/OptionCompare:
+/OptionStrict:
+/OptionInfer:
+/MyType:
+/src:Arena.cs
+/src:Arena.Actions.cs
+/src:Hero.cs
+/src:Hero.Actions.cs
+/src:Player.cs
+/src:Properties\AssemblyInfo.cs
+/src:Properties\orleans.codegen.cs

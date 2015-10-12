@@ -1,0 +1,121 @@
+[2015-07-31 09:35:53.061 GMT    10	INFO   	100313	OutsideRuntimeClient	]	---------- Initializing OutsideRuntimeClient on GAVIN-PC at 192.168.0.8 Client Id = *cli/6d3fc899 ----------	
+[2015-07-31 09:35:53.072 GMT    10	INFO   	100314	OutsideRuntimeClient	]	---------- Starting OutsideRuntimeClient with runtime Version='1.0.9.0 (Release).' Config= 
+ Platform version info:
+   .NET version: 4.0.30319.42000
+   Is .NET 4.5=True
+   OS version: Microsoft Windows NT 6.1.7601 Service Pack 1
+   GC Type=Client GCLatencyMode=Interactive
+   Host: GAVIN-PC
+   Processor Count: 4
+Client Configuration:
+   Config File Name: L:\Projects\Ains\src\Ains.Silo\bin\Debug\ClientConfiguration.xml
+   Start time: 2015-07-31 09:35:53.065 GMT
+   Gateway Provider: Config
+   Gateways[1]:
+      127.0.0.1:40000
+   Preferred Gateway Index: -1
+   GatewayListRefreshPeriod: 00:01:00
+   Azure:
+      DeploymentId: Gavin
+      DataConnectionString: null
+   Preferred Address Family: InterNetwork
+   DNS Host Name: GAVIN-PC
+   Client Name: Client
+   Tracing: 
+     Default Trace Level: Info
+     TraceLevelOverrides:
+         Runtime ==> Info
+         Application ==> Info
+         AssemblyLoader ==> Warning
+     Trace to Console: True
+     Trace File Name: L:\Projects\Ains\src\Ains.Silo\bin\Debug\Client-2015-07-31-09.35.52.747Z.log
+     Write Messaging Traces: False
+     LargeMessageWarningThreshold: 85000
+     PropagateActivityId: False
+     BulkMessageLimit: 1000
+   Statistics: 
+     MetricsTableWriteInterval: 00:05:00
+     PerfCounterWriteInterval: 00:00:30
+     LogWriteInterval: 00:05:00
+     WriteLogStatisticsToTable: True
+     StatisticsCollectionLevel: Info
+   Messaging:
+       Response timeout: 00:00:30
+       Maximum resend count: 0
+       Resend On Timeout: False
+       Maximum Socket Age: 10675199.02:48:05.4775807
+       Drop Expired Messages: True
+       Client Sender Buckets: 8192
+       Use standard (.NET) serializer: False   [NOTE: This *MUST* match the setting on the server or nothing will work!]
+       Buffer Pool Buffer Size: 4096
+       Buffer Pool Max Size: 10000
+       Buffer Pool Preallocation Size: 250
+       Use Message Batching: False
+       Max Message Batching Size: 10
+   Providers:
+       No providers configured.
+	
+[2015-07-31 09:35:53.089 GMT    10	INFO   	101309	Messaging.GatewayManager	]	Found 1 knownGateways from Gateway listProvider [gwy.tcp://127.0.0.1:40000/0]	
+[2015-07-31 09:35:57.721 GMT    10	WARNING	100178	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	192.168.0.8:0]	Unable to connect to gateway at address gwy.tcp://127.0.0.1:40000/0 on trial 0.	
+[2015-07-31 09:35:57.721 GMT    10	WARNING	100913	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	192.168.0.8:0]	Marking gateway at address gwy.tcp://127.0.0.1:40000/0 as Disconnected	
+[2015-07-31 09:35:58.741 GMT    10	WARNING	100178	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	192.168.0.8:0]	Unable to connect to gateway at address gwy.tcp://127.0.0.1:40000/0 on trial 1.	
+[2015-07-31 09:35:58.751 GMT    10	WARNING	100913	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	192.168.0.8:0]	Marking gateway at address gwy.tcp://127.0.0.1:40000/0 as Disconnected	
+[2015-07-31 09:35:58.751 GMT    10	WARNING	100912	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	192.168.0.8:0]	Marking gateway at address gwy.tcp://127.0.0.1:40000/0 as Dead in my client local gateway list.	
+[2015-07-31 09:35:58.861 GMT    10	INFO   	100000	OutsideRuntimeClient	192.168.0.8:0]	OutsideRuntimeClient.Reset(): client Id *cli/6d3fc899	
+[2015-07-31 09:35:58.951 GMT    10	INFO   	100704	ClientLogStatistics	192.168.0.8:0]	Statistics: ^^^
+App.Requests.Latency.Average.Millis=2075.000
+App.Requests.LatencyHistogram.Millis=[1677.7216:3355.4431]=1, 
+App.Requests.TimedOut.Current=0
+App.Requests.Total.Requests.Current=1
+Client.ConnectedGatewayCount=0
+Messaging.Expired.AtDispatch.Current=0
+Messaging.Expired.AtInvoke.Current=0
+Messaging.Expired.AtReceive.Current=0
+Messaging.Expired.AtRespond.Current=0
+Messaging.Expired.AtSend.Current=0
+Messaging.Received.BatchSize.PerSocketDirection.ClientToGateway=0.000
+Messaging.Received.BatchSizeBytesHistogram.Bytes.PerSocketDirection.ClientToGateway=
+Messaging.Received.Bytes.Header.Current=0
+Messaging.Received.Bytes.Total.Current=0
+Messaging.Received.Direction.OneWay.Current=0
+Messaging.Received.Direction.Request.Current=0
+Messaging.Received.Direction.Response.Current=0
+Messaging.Received.Messages.Total.Current=0
+Messaging.Received.MessageSizeHistogram.Bytes=
+Messaging.Rejected.Request.Current=1
+Messaging.Rerouted.OneWay.Current=0
+Messaging.Rerouted.Request.Current=0
+Messaging.Rerouted.Response.Current=0
+Messaging.Sent.BatchSize.PerSocketDirection.ClientToGateway=0.000
+Messaging.Sent.BatchSizeBytesHistogram.Bytes.PerSocketDirection.ClientToGateway=
+Messaging.Sent.Bytes.Header.Current=0
+Messaging.Sent.Bytes.Total.Current=0
+Messaging.Sent.Direction.OneWay.Current=0
+Messaging.Sent.Direction.Request.Current=0
+Messaging.Sent.Direction.Response.Current=0
+Messaging.Sent.Messages.Total.Current=0
+Messaging.Sent.MessageSizeHistogram.Bytes=
+Networking.Sockets.ClientToGateway.Duplex.Closed.Current=2
+Networking.Sockets.ClientToGateway.Duplex.Opened.Current=0
+Runtime.CpuUsage=0.000
+Runtime.DOT.NET.ThreadPool.InUse.CompletionPortThreads=0
+Runtime.DOT.NET.ThreadPool.InUse.WorkerThreads=2
+Runtime.GC.AllocatedBytesInKbPerSec=0.000
+Runtime.GC.GenCollectonCount=gen0=1, gen1=0, gen2=0
+Runtime.GC.GenSizesKb=gen0=6144.00, gen1=864.89, gen2=0.01
+Runtime.GC.LargeObjectHeapSizeKb=60.573
+Runtime.GC.NumberOfInducedGCs=0.000
+Runtime.GC.PercentOfTimeInGC=0.000
+Runtime.GC.PromotedFinalizationMemoryFromGen0Kb=0.254
+Runtime.GC.PromotedMemoryFromGen1Kb=0.000
+Runtime.GC.TotalMemoryKb=9811
+Serialization.BufferPool.AllocatedBuffers.Current=250
+Serialization.BufferPool.BuffersInPool=218
+Serialization.BufferPool.CheckedInBuffers.Current=250
+Serialization.BufferPool.CheckedOutBuffers.Current=282
+Serialization.BufferPool.DroppedBuffers.Current=0
+Serialization.BufferPool.DroppedTooLargeBuffers.Current=0
+Serialization.BufferPool.InUse.AllocatedAndNotInPool_Buffers=32
+Serialization.BufferPool.InUse.CheckedOutAndNotCheckedIn_Buffers=32
+	
+[2015-07-31 09:35:58.971 GMT    10	INFO   	100000	OutsideRuntimeClient	192.168.0.8:0]	OutsideRuntimeClient.ConstructorReset(): client Id *cli/6d3fc899	

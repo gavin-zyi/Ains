@@ -1,0 +1,9 @@
+L:\Projects\Ains\src\Ains.Logic\obj\Debug\Ains.Logic.csprojResolveAssemblyReference.cache
+L:\Projects\Ains\src\Ains.Logic\obj\Debug\Ains.Logic.dll
+L:\Projects\Ains\src\Ains.Logic\bin\Debug\Ains.Logic.dll
+L:\Projects\Ains\src\Ains.Logic\bin\Debug\Ains.Logic.pdb
+L:\Projects\Ains\src\Ains.Logic\bin\Debug\Ains.dll
+L:\Projects\Ains\src\Ains.Logic\bin\Debug\Orleans.dll
+L:\Projects\Ains\src\Ains.Logic\bin\Debug\Ains.pdb
+L:\Projects\Ains\src\Ains.Logic\bin\Debug\Orleans.xml
+L:\Projects\Ains\src\Ains.Logic\obj\Debug\Ains.Logic.pdb

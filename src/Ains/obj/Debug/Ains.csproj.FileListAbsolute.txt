@@ -1,0 +1,7 @@
+L:\Projects\Ains\src\Ains\bin\Debug\Ains.dll
+L:\Projects\Ains\src\Ains\bin\Debug\Ains.pdb
+L:\Projects\Ains\src\Ains\bin\Debug\Orleans.dll
+L:\Projects\Ains\src\Ains\bin\Debug\Orleans.xml
+L:\Projects\Ains\src\Ains\obj\Debug\Ains.dll
+L:\Projects\Ains\src\Ains\obj\Debug\Ains.pdb
+L:\Projects\Ains\src\Ains\obj\Debug\Ains.csprojResolveAssemblyReference.cache
